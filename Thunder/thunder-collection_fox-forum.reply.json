@@ -1,0 +1,134 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "fox-forum.reply",
+    "dateExported": "2023-10-05T11:51:28.192Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "531f4d33-0171-4a29-a27b-7f8fa0e35e81",
+            "colId": "5e09b34d-b5b5-48d2-9a8e-a42b8ecaa602",
+            "containerId": "",
+            "name": "get",
+            "url": "http://localhost:8083/reply/1",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-10-05T11:44:35.572Z",
+            "modified": "2023-10-05T11:44:35.573Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a75bdd6d-d2bf-4db7-948c-816ce8b413fd",
+            "colId": "5e09b34d-b5b5-48d2-9a8e-a42b8ecaa602",
+            "containerId": "",
+            "name": "get3",
+            "url": "http://localhost:8083/reply/?page1&size=5",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-10-05T11:46:31.874Z",
+            "modified": "2023-10-05T11:46:53.211Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "page1",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "size",
+                    "value": "5",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "91d49e60-f7d1-4a4a-803f-abe31d3724dc",
+            "colId": "5e09b34d-b5b5-48d2-9a8e-a42b8ecaa602",
+            "containerId": "",
+            "name": "create",
+            "url": "http://localhost:8083/reply/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-10-05T11:44:37.333Z",
+            "modified": "2023-10-05T11:44:37.333Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Mi tercer post\",\n  \"body\": \"Me gusta comer\",\n  \"id_user\": 1,\n  \"id_thread\":1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "55fcc767-62a0-423a-aaa8-d563fc37c3d9",
+            "colId": "5e09b34d-b5b5-48d2-9a8e-a42b8ecaa602",
+            "containerId": "",
+            "name": "update",
+            "url": "http://localhost:8083/reply/",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-10-05T11:44:39.341Z",
+            "modified": "2023-10-05T11:44:39.341Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Mi tercer post\",\n  \"body\": \"Me gusta bailar\",\n  \"id_user\": 1,\n  \"id_thread\":1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2ca085f2-81f9-45bc-8dd7-50dfaa700479",
+            "colId": "5e09b34d-b5b5-48d2-9a8e-a42b8ecaa602",
+            "containerId": "",
+            "name": "delete",
+            "url": "http://localhost:8083/reply/3",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-10-05T11:44:41.156Z",
+            "modified": "2023-10-05T11:44:41.156Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "795422aa-7fd1-481d-9403-0f6f1f6a190b",
+            "colId": "5e09b34d-b5b5-48d2-9a8e-a42b8ecaa602",
+            "containerId": "",
+            "name": "populate",
+            "url": "http://localhost:8083/reply/populate/100",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-10-05T11:44:43.140Z",
+            "modified": "2023-10-05T11:44:43.140Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7f4c600f-c8af-4439-a5ce-5377bea5f663",
+            "colId": "5e09b34d-b5b5-48d2-9a8e-a42b8ecaa602",
+            "containerId": "",
+            "name": "get2",
+            "url": "http://localhost:8083/reply/?page=1",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-10-05T11:44:44.508Z",
+            "modified": "2023-10-05T11:46:16.180Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}

@@ -1,0 +1,134 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "fox-forum-user",
+    "dateExported": "2023-10-05T11:50:24.602Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "c1adfa70-8ed1-4b0d-8886-4ae668acea4d",
+            "colId": "36dac1d7-8191-4dff-8d9b-98432ec8940a",
+            "containerId": "",
+            "name": "get",
+            "url": "http://localhost:8083/user/1",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-10-05T11:11:32.526Z",
+            "modified": "2023-10-05T11:12:12.383Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1e5ee483-c99c-4206-8c2b-69095a9c0434",
+            "colId": "36dac1d7-8191-4dff-8d9b-98432ec8940a",
+            "containerId": "",
+            "name": "create",
+            "url": "http://localhost:8083/user/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-10-05T11:12:56.733Z",
+            "modified": "2023-10-05T11:20:46.934Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Lucia\",\n  \"surname\": \"Martinez\",\n  \"lastname\": \"Lucas\",\n  \"email\": \"lucia@gmail.com\",\n  \"username\": \"luciama\",\n  \"password\": \"e2cac5c5f7e52ab03441bb70e89726ddbd1f6e5b683dde05fb65e0720290179e\",\n  \"role\": true\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "476ba15b-47df-4558-977c-73ac140a6e74",
+            "colId": "36dac1d7-8191-4dff-8d9b-98432ec8940a",
+            "containerId": "",
+            "name": "update",
+            "url": "http://localhost:8083/user/",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-10-05T11:14:46.327Z",
+            "modified": "2023-10-05T11:21:27.168Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 506,\n  \"name\": \"Lucia\",\n  \"surname\": \"Martinez\",\n  \"lastname\": \"Lucas\",\n  \"email\": \"lucia@gmail.com\",\n  \"username\": \"luciamalu\",\n  \"role\": true\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "345bf4a5-15bd-4dc3-8030-7b337f37b0e7",
+            "colId": "36dac1d7-8191-4dff-8d9b-98432ec8940a",
+            "containerId": "",
+            "name": "delete",
+            "url": "http://localhost:8083/user/506",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-10-05T11:24:24.645Z",
+            "modified": "2023-10-05T11:24:59.407Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c0bf05f6-1a3b-4412-bc08-8b5abfbfbf21",
+            "colId": "36dac1d7-8191-4dff-8d9b-98432ec8940a",
+            "containerId": "",
+            "name": "populate",
+            "url": "http://localhost:8083/user/populate/100",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-10-05T11:25:50.692Z",
+            "modified": "2023-10-05T11:26:13.656Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "14cc23f9-d5cc-402e-b65b-16e1c4a24e1f",
+            "colId": "36dac1d7-8191-4dff-8d9b-98432ec8940a",
+            "containerId": "",
+            "name": "get2",
+            "url": "http://localhost:8083/user/?page=1",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2023-10-05T11:48:26.818Z",
+            "modified": "2023-10-05T11:48:38.662Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "9250d3f9-0295-48f7-846c-e26737a0952f",
+            "colId": "36dac1d7-8191-4dff-8d9b-98432ec8940a",
+            "containerId": "",
+            "name": "get3",
+            "url": "http://localhost:8083/user/?page=1&size=5",
+            "method": "GET",
+            "sortNum": 190000,
+            "created": "2023-10-05T11:48:44.299Z",
+            "modified": "2023-10-05T11:48:57.526Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "size",
+                    "value": "5",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}
